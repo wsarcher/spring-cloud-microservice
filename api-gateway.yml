@@ -1,9 +1,12 @@
 server:
-  port: 8099
+  port: 8080
   
 spring:
   application:
     name: user-service
+  data:
+    mongodb:
+      uri: mongodb://192.168.80.230
  
 eureka:
   instance:
