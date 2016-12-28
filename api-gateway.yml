@@ -17,8 +17,7 @@ eureka:
 
 zuul:
   routes:
-    user-webservice: /user/**
-      
+    user-service: /user/**
 ---
 spring:
   profiles: docker
