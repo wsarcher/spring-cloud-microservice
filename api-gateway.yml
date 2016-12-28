@@ -3,7 +3,7 @@ server:
   
 spring:
   application:
-    name: user-service
+    name: api-gateway
   data:
     mongodb:
       uri: mongodb://192.168.80.230
