@@ -4,7 +4,10 @@ server:
 spring:
   application:
     name: load-balance
- 
+  data:
+    mongodb:
+      uri: mongodb://192.168.80.230/test
+      
 eureka:
   instance:
     hostname: localhost
