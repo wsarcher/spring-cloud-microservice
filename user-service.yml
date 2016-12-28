@@ -1,0 +1,16 @@
+server:
+  port: 8081
+  
+spring:
+  application:
+    name: user-service
+    
+---
+spring:
+  profiles: docker
+eureka:
+  instance:
+    preferIpAddress: true
+  client:
+    serviceUrl:
+      defaultZone: http://192.168.80.230:8761/eureka/
