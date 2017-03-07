@@ -4,9 +4,12 @@ server:
 spring:
   application:
     name: load-balance
-  data:
-    mongodb:
-      uri: mongodb://192.168.80.230/test
+  datasource
+    url=jdbc:mysql://192.168.80.230:3306/dev
+    username=root
+    password=root123
+    driver-class-name=com.mysql.jdbc.Driver
+spring.jpa.properties.hibernate.hbm2ddl.auto=update
       
 eureka:
   instance:
