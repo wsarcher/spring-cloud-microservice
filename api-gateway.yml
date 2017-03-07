@@ -17,7 +17,8 @@ eureka:
 
 zuul:
   routes:
-    load-balance: /api/**
+    load-balance: /api/user
+    auth-service: /api/device
 ---
 spring:
   profiles: docker
