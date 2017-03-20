@@ -22,14 +22,7 @@ zuul:
     auth-lb: /api/device/**
     strongauth-lb: /api/strongauth/**
     sentemail-lb: /api/email/**
-
-ribbon:
-  ReadTimeout: 60000
-  ConnectTimeout: 60000
-  MaxAutoRetries: 0
-  MaxAutoRetriesNextServer: 1
-  eureka:
-    enabled: false    
+ 
 ---
 spring:
   profiles: docker
