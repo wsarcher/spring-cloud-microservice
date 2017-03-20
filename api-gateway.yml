@@ -18,7 +18,11 @@ eureka:
 zuul:
   routes:
     load-balance: /api/user/**
-    auth-service: /api/device/**
+    account-lb: /api/account/**
+    auth-lb: /api/device/**
+    strongauth-lb: /api/strongauth/**
+    sentemail-lb: /api/email/**
+    
 ---
 spring:
   profiles: docker
