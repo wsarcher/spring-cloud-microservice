@@ -22,7 +22,19 @@ zuul:
     auth-lb: /api/device/**
     strongauth-lb: /api/strongauth/**
     sentemail-lb: /api/email/**
- 
+
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 50000
+
+sentemail-lb:
+  ribbon:
+    ReadTimeout: 50000
+
 ---
 spring:
   profiles: docker
