@@ -35,6 +35,10 @@ sentemail-lb:
   ribbon:
     ReadTimeout: 50000
 
+auth-lb:
+  ribbon:
+    ReadTimeout: 50000
+
 ---
 spring:
   profiles: docker
